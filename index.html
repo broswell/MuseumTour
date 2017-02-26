@@ -62,15 +62,7 @@
  <tr><td style="width:20%">
  Use your mouse to move around, zoom or  stop motion.
  <br>
- Click on <svg xmlns="http://www.w3.org/2000/svg" width="26" height="21">
- <circle fill-opacity=".78" cy="10.5" cx="13" r="11" fill="#fff"/>
- <path d="m13 3-6.125 6.125h4.375v7.875h3.5v-7.875h4.26z"/>
- </svg>
- in image to move to another gallery
- <br>
  Click on
-
-
  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24">
  <circle fill-opacity=".78" cy="12.5" cx="13" r="11" fill="#fff"/>
  <path d="m13 6a7 7 0 0 0 -7 7 7 7 0 0 0 7 7 7 7 0 0 0 7 -7 7 7 0 0 0 -7 -7zm-1 3h2v2h-2zm0 3h2v5h-2z"/>
@@ -230,7 +222,7 @@ var bobobj = pannellum.viewer('panorama', {
        },
       "gallery2": {
            "title": "Gallery 2",
-           "hfov": 160,
+           "hfov": 110,
            "yaw": 0,
            "type": "equirectangular",
            "panorama": "gallery2.jpg",
@@ -321,13 +313,13 @@ tag.attr("src",urlargs);
 }     
 
 function gallery1(args) {
- bobobj.loadScene("gallery1",60,60,120);
+ bobobj.loadScene("gallery1",0,60,120);
 }
 function gallery2(args) {
- bobobj.loadScene("gallery2",60,60,120);
+ bobobj.loadScene("gallery2",0,180,120);
 }
 function gallery3(args) {
- bobobj.loadScene("gallery3",60,60,120);
+ bobobj.loadScene("gallery3",0,60,120);
 }
 </script>
 
